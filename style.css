@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(248, 248, 218);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+}
+
+a:hover{
+  text-decoration: underline;
+  transition-duration: .5s;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 96vw;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.header-left img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.shopcart img {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.shopcart img:hover {
+  /* border: 1px solid black; */
+  background-color: wheat;
+  border-radius: 1rem;
+}
+
+.header-middle {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+
+.header-middle input {
+  width: 50vw;
+  height: 2rem;
+}
+
+.header-middle img {
+  width: 2.8rem;
+  cursor: pointer;
+}
+
+.header-middle img:hover {
+  background-color: white;
+  border: 1px solid black;
+  transition-duration: .2s;
+  border-radius: 2rem;
+}
+
+.header-middle input {
+  background-color: white;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  justify-content: center;
+  padding-right: 1rem;
+  text-align: center;
+  height: fit-content;
+}
+
+.header-right button {
+  padding: 2rem;
+}
+
+.header-right img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+}
+
+.profile {
+  position: relative;
+  cursor: pointer;
+  top: 0;
+  justify-content: center;
+}
+
+.header-right #profile-name:hover{
+  background-color: white;
+  /* width: 3rem;
+  height: 3rem; */
+}
+
+.header-right .profile .drop-down{
+  padding: .5rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  row-gap: .8rem;
+  justify-content: center;
+  text-align: left;
+  z-index: 3;
+  border: 2px solid black;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem grey;
+}
+
+.header-right .profile .drop-down a{
+  color: black;
+}
+
+.header-right .profile .drop-down a:hover{
+  text-decoration: underline;
+  color: orange;
+}
+
+#login {
+  background-color: white;
+  border: 1px solid rgb(241, 241, 101);
+  color: black;
+  border-radius: 1rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+#register {
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+  background-color: rgb(241, 241, 101);
+  border-radius: 1rem;
+  width: 5rem;
+  cursor: pointer;
+}
+
+#login:hover, 
+#register:hover{
+  box-shadow: 0rem 0rem 0.8rem orange;
+}
+
+/* --------------------------------------------------- */
+.body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.body .menu-bar {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  justify-content: center;
+}
+
+.body .menu-bar .btn {
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.body .menu-bar .btn:hover {
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  color: white;
+  background-color: yellow;
+}
+
+.body #tenant-list {
+  justify-content: center;
+  display: flex;
+}
+
+.body #tenant-list img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.body .tenant-list #tenant-details {
+  display: flex;
+  cursor: pointer;
+}
+
+.unieatlogo img{
+  width: 9rem;
+  height: 9rem;
+}
+
+.detail {
+  text-align: left;
+}
+
+.body .cancel{
+  background-color: white;
+  font-size: 2rem;
+  border: 1px solid black;
+  width: fit-content;
+}
+
+/* ------------------------------------------ */
+.registerpage,
+.logpage,
+.forgotpage {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.registerlogo,
+.loglogo,
+.forgotlogo {
+  text-align: center;
+}
+
+.registerform,
+.logform,
+.forgotform {
+  margin-left: 10%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  border: 2px solid black;
+  padding: 2rem 1rem;
+  box-shadow: .5rem .5rem 0.5rem grey;
+}
+
+.registerform input,
+.logform input,
+.forgotform input,
+.tenantlogoupdate input {
+  width: 50%;
+  height: 2rem;
+  background-color: white;
+}
+
+#btnregis,
+#btnlog,
+#btnforgot {
+  border: 1px solid yellow;
+  color: yellow;
+  font-size: 2rem;
+  background-color: rgb(219, 216, 216);
+  width: 30%;
+  cursor: pointer;
+}
+
+#forgotpassword {
+  text-align: right;
+  color: blue;
+  cursor: pointer;
+}
+
+/* ---------------------------------------- */
+.custsettings,
+.tenantsettings {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+  border: 1px solid black;
+}
+
+.custsettingsform,
+.tenantsettingsform {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  padding: 2rem 1rem 5rem 1rem;
+  border: 1px solid black;
+}
+
+.custsettingsform input,
+.tenantsettingsform input {
+  padding: 0.2rem;
+}
+
+.cust,
+.tenant {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.tenant{
+  justify-content: left;
+}
+.tenant label{
+  display: inline-block;
+  width: 7rem;
+}
+
+.right-bottom-btn,
+.left-bottom-btn {
+  position: absolute;
+  display: flex;
+  column-gap: 1rem;
+  right: 0;
+  bottom: 0;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.left-bottom-btn{
+  left: 1rem;
+  right: auto;
+}
+
+.right-bottom-btn button,
+.left-bottom-btn button {
+  padding: 0.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.right-bottom-btn button:hover,
+.left-bottom-btn button:hover{
+  background-color: yellow;
+  transition-duration: .5s;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+#logo-update {
+  width: 3rem;
+  height: 3rem;
+}
+
+.updatelogo{
+  display: flex;
+  flex-direction: column;
+}
+/* ------------------------------------------------------------------- */
+
+.body #customer-list,
+.body #tenant-list{
+  flex-wrap: wrap;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.body #customer-list .pemisah,
+.body #tenant-list .pemisah{
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  width: fit-content;
+  border: 1px solid black;
+}
+
+.body #customer-list .pemisah #customer-details,
+.body #tenant-list .pemisah #tenant-details{
+  justify-content: center;
+  border-left: 2px solid black;
+  background-color: white;
+}
+
+.body #customer-list .pemisah #customer-details .detail,
+.body #tenant-list .pemisah #tenant-details .detail{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex-wrap: wrap;
+  width: 15rem;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.body #tenant-list .tenant-body{
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+}
+
+/* --------------------------------------------- */
+.new-tenant,
+.new-admin{
+  display: flex;
+  flex-direction: row;
+  column-gap: 18rem;
+  justify-content: center;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.admin-list .admin{
+  border: 1px solid black;
+}
+
+.admin-list .admin .admin-profile img{
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/* ---------------------------------------- */
+.body .tenants #tenant-list .tenanttenant .tenant-details button:hover{
+  background-color: orange;
+  color: white;
+  transition-duration: .3s;
+}
